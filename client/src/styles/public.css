@@ -1,0 +1,60 @@
+/* About Page */
+.about-intro { padding: 60px 0; }
+.about-intro-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: center; }
+.about-motto { font-size: 20px; font-style: italic; color: var(--primary); margin: 16px 0; }
+.about-intro-stats { display: flex; flex-direction: column; gap: 16px; }
+.about-stat { background: var(--white); padding: 24px; border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow); }
+.about-stat h3 { font-size: 28px; font-weight: 700; color: var(--primary); }
+.mission-section { padding: 60px 0; background: var(--light); }
+.mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.mission-card { background: var(--white); padding: 32px; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+.mission-card h3 { color: var(--primary); margin-bottom: 12px; }
+.values-section, .facilities-section { padding: 60px 0; }
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.value-card { background: var(--white); padding: 24px; border-radius: var(--radius); text-align: center; box-shadow: var(--shadow); }
+.value-icon { font-size: 32px; margin-bottom: 8px; }
+.facilities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.facility-card { background: var(--white); padding: 20px; border-radius: var(--radius); display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow); }
+.facility-icon { font-size: 24px; }
+.achievement-item { display: flex; align-items: center; gap: 12px; background: var(--white); padding: 16px 20px; border-radius: var(--radius); box-shadow: var(--shadow); }
+
+/* Admission Page */
+.admission-section { padding: 40px 0 80px; }
+.admission-grid { display: grid; grid-template-columns: 1fr 320px; gap: 32px; }
+.admission-form-container { background: var(--white); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow); }
+.form-steps { display: flex; gap: 8px; margin-bottom: 32px; border-bottom: 2px solid var(--border); padding-bottom: 16px; }
+.step { padding: 8px 16px; border-radius: var(--radius); cursor: pointer; font-size: 14px; font-weight: 500; color: var(--secondary); transition: var(--transition); }
+.step.active { background: var(--primary); color: white; }
+.subject-category { margin-bottom: 20px; }
+.subject-category h4 { font-size: 14px; color: var(--secondary); margin-bottom: 8px; text-transform: uppercase; }
+.subjects-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.subject-checkbox { display: flex; align-items: center; gap: 6px; padding: 8px 14px; border: 1px solid var(--border); border-radius: 20px; cursor: pointer; font-size: 13px; transition: var(--transition); }
+.subject-checkbox.selected { background: var(--primary); color: white; border-color: var(--primary); }
+.subject-checkbox input { display: none; }
+.admission-sidebar { display: flex; flex-direction: column; gap: 20px; }
+.sidebar-card { background: var(--white); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow); }
+.sidebar-card h3 { font-size: 16px; margin-bottom: 12px; }
+.sidebar-card ul { list-style: none; padding: 0; }
+.sidebar-card ul li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.sidebar-card p { font-size: 14px; color: var(--secondary); margin-bottom: 4px; }
+.status-result { margin-top: 16px; padding: 16px; background: var(--light); border-radius: var(--radius); }
+
+/* Success */
+.success-section { padding: 80px 24px; display: flex; align-items: center; justify-content: center; min-height: 60vh; }
+.success-card { background: var(--white); border-radius: var(--radius-lg); padding: 48px; text-align: center; box-shadow: var(--shadow-lg); max-width: 500px; }
+.success-icon { font-size: 64px; margin-bottom: 16px; }
+.application-id { font-size: 24px; font-weight: 700; color: var(--primary); padding: 16px; background: var(--primary-light); border-radius: var(--radius); margin: 16px 0; }
+
+/* News & Events */
+.news-events-section { padding: 40px 0 80px; }
+.news-events-tabs { display: flex; gap: 8px; margin-bottom: 32px; border-bottom: 2px solid var(--border); padding-bottom: 16px; }
+.tab-btn { padding: 10px 24px; border-radius: var(--radius); background: none; font-weight: 500; color: var(--secondary); }
+.tab-btn.active { background: var(--primary); color: white; }
+.news-grid, .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+.news-card, .event-card { background: var(--white); border-radius: var(--radius-lg); padding: 20px; box-shadow: var(--shadow); cursor: pointer; transition: var(--transition); }
+.news-card:hover, .event-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.news-category { display: inline-block; padding: 4px 10px; background: var(--primary-light); color: var(--primary); border-radius: 20px; font-size: 12px; margin-bottom: 12px; }
+.news-meta { display: flex; justify-content: space-between; font-size: 12px; color: var(--secondary); }
+.event-card { display: flex; gap: 16px; }
+.event-day { font-size: 28px; font-weight: 700; color: var(--primary); }
+.event-month { font-size: 12px; color: var(--secondary); text-transform: uppercase; }
