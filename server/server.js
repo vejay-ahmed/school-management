@@ -22,13 +22,24 @@ const parentRoutes = require('./routes/parents');
 const publicRoutes = require('./routes/public');
 
 const app = express();
+const cors = require('cors');
 
 // Middleware
-app.use(cors());
+app.use(express.json());
+ app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://your-frontend.vercel.app'
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
+
 // Database Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/school_management')
+mongoose.connect(process.env.MONGODB_URI )
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.error('MongoDB Connection Error:', err));
 
